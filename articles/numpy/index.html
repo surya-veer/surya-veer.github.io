@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html class=" js no-touch cssanimations csstransforms csstransforms3d csstransitions" style="" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>Numpy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Hand NoteBook for Numpy, NumPy is a library for Python programming.">
+    <meta name="keywords" content="numpy, ml, mechine learning, tutorials, hand book">
+    <meta name="author" content="suryaveer">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="../blog_files/bootstrap.css">
+    <link rel="stylesheet" href="../blog_files/normalize.css">
+    <link rel="stylesheet" href="../blog_files/transition-animations.css">
+    <link rel="stylesheet" href="../blog_files/owl.css">
+    <link rel="stylesheet" href="../blog_files/magnific-popup.css">
+    <link rel="stylesheet" href="../blog_files/animate.css">
+    <link rel="stylesheet" href="../blog_files/main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+
+    <script src="../blog_files/jquery-2.js"></script>
+    <script src="../blog_files/modernizr.js"></script>
+
+
+    <!-- prism -->
+        <!-- <link rel="stylesheet" href="../blog_files/code/style.css" /> -->
+    <link rel="stylesheet" href="../blog_files/code/prism.css" data-noprefix />
+    <script src="../blog_files/code/prism.js"></script>
+    <script src="../blog_files/code/utopia.js"></script>
+    <script src="../blog_files/code/components.js"></script>
+    <script src="../blog_files/code/code.js"></script>
+    <script src="../blog_files/code/vendor/promise.js"></script>
+    </script><script src="../blog_files/code/prism-python.js" async=""></script>
+    <!-- end prism -->
+  </head>
+
+  <body>
+    <!-- Loading animation -->
+    <div class="preloader" style="display: none;">
+      <div class="preloader-animation">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+      </div>
+    </div>
+    <!-- /Loading animation -->
+
+    <!-- Single Post page -->
+    <div id="page" class="page blog-post-page">
+          <header id="site_header" class="header mobile-menu-hide">
+     
+
+        <div class="site-title-block">
+          <h1 class="site-title" style="font-size:3em; ">Numpy</h1>
+          <p class="site-description">Hand NoteBook for Numpy</p>
+        </div>
+
+        <!-- Navigation & Social buttons -->
+        <div class="site-nav">
+          <!-- Main menu -->
+          <ul id="nav" class="site-main-menu" style="text-align: left;">
+            <!-- About Me Subpage link -->
+            <li class="active">
+              <a class="pt-trigger" href="#home" data-animation="58" data-goto="1">Intro</a><!-- href value = data-id without # of .pt-page. Data-goto is the number of section -->
+            </li>
+            <!-- /About Me Subpage link -->
+            <!-- About Me Subpage link -->
+            <li>
+              <a class="pt-trigger" href="#about_me" data-animation="59" data-goto="2">Arrays</a>
+            </li>
+            <!-- /About Me Subpage link -->
+            <li>
+              <a class="pt-trigger" href="#resume" data-animation="60" data-goto="3">Manipulation</a>
+            </li>
+            <li>
+              <a class="pt-trigger" href="#portfolio" data-animation="61" data-goto="4">Copies and Views</a>
+            </li>
+            <li>
+              <a class="pt-trigger" href="#blog" data-animation="58" data-goto="5">Linear Algebra</a>
+            </li>
+            <li>
+              <a class="pt-trigger" href="#contact" data-animation="59" data-goto="6">Advance</a>
+            </li>
+          </ul>
+          <!-- /Main menu -->
+
+          <!-- Social buttons -->
+          <ul class="social-links">
+            <li><a class="tip social-button" href="https://twitter.com/ayrusreev" title="Twitter"><i class="fa fa-twitter"></i></a></li> <!-- Full list of social icons: http://fontawesome.io/icons/#brand -->
+            <li><a class="tip social-button" href="http://facebook.com/ayrusreev" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="tip social-button" href="http://github.com/surya-veer" title="github"><i class="fa fa-github"></i></a></li>
+            <!--<li><a class="tip social-button" href="#" title="Youtube"><i class="fa fa-youtube"></i></a></li>-->
+            <!--<li><a class="tip social-button" href="#" title="last.fm"><i class="fa fa-lastfm"></i></a></li>-->
+            <!--<li><a class="tip social-button" href="#" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>-->
+          </ul>
+          <!-- /Social buttons -->
+        </div>
+        <!-- Navigation & Social buttons -->
+      </header>
+      <!-- /Header -->
+
+      <!-- Mobile Header -->
+      <div class="mobile-header mobile-visible">
+        <div class="mobile-logo-container">
+          <div class="mobile-site-title">Hand Book for Numpy</div>
+        </div>
+
+        <a class="menu-toggle mobile-visible">
+          <span class="icon-bar"  style="background-color: red;"></span>
+          <span class="icon-bar"  style="background-color: red;"></span>
+          <span class="icon-bar"  style="background-color: red;"></span>
+        </a>
+      </div>
+      <!-- /Mobile Header -->
+
+      <div id="main" class="site-main">
+        <div class="page-wrapper">
+
+          <div class="blog-post-main-image">
+            <img class="post-image img-responsive" src="numpy_suryaveer.jpg" alt="numpy suryaveer" style="width: 100%">
+          </div>
+
+          <div class="blog-post-content">
+            <h1>Basics of Numpy for Machine Learning</h1>
+            <ul class="tags">
+                <li><a>Numpy</a></li>
+                <li><a>ML</a></li>
+                <li><a>AI</a></li>
+                <li><a>Python</a></li>
+            </ul>
+           
+<!-- 
+            <blockquote>
+                <p>Vivamus volutpat auctor metus, venenatis ornare mi dictum sit amet. Aliquam erat volutpat.</p>
+                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote> -->
+      <h3 style="margin-top:1em;margin-bottom: 0;" > What is NumPy? <img src="think.gif"></h3>
+       <p class="lead" style="margin-bottom: 0;margin-top: .5em">NumPy is a library for <a href="python.com">Python</a> programming.This is the fundamental package for scientific computing with Python. It contains among other things</p>
+    <ul>
+    <li>a powerful N-dimensional array object</li>
+    <li>sophisticated (broadcasting) </li>
+    <li>stools for integrating C/C++ and Fortran code</li>
+    <li>useful linear algebra, Fourier transform, and random number capabilities</li></ul>
+
+    <hr>
+    <h3>Getting Numpy</h3>
+    <b>Using pip</b><br>
+    Type the follwing in terminal
+    <pre>pip install --upgrade pip</pre>
+    <pre>pip install numpy</pre>
+     <b>Windows packages </b><br>
+     Download numpy from  <a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy">here.</a><br>
+     Now follow some basic instructions of stackoverflow's answer
+     <a href="https://stackoverflow.com/questions/11200137/installing-numpy-on-64bit-windows-7-with-python-2-7-3">Click here</a>
+    <p class="lead" style="margin-top: .5em">You can find numpy for all the operating systems here <a href="https://scipy.org/install.html">https://scipy.org/install.html</a></p>
+
+    <hr>
+    <h3>Testing Numpy</h3>
+    Open terminal and type 
+    <code>python</code> then 
+    <section> <pre class="  language-python"><code class=" language-python">import numpy</code></pre></section>
+    It will look like this <br>
+    <img src="testing_linux.png"><br><br>
+
+    and for windows using Python Shell<br>
+     <img src="testing_wind.png"><br><br>
+    if you not getting any error then all set... <br></p> <strong>Let's do NumPy!</strong>
+         <img src="smily.gif"><br>
+
+         <!-- next and preious button -->
+
+      <div style="margin-top: 2em">
+        <button>Prev</button>
+        <button>Next</button>
+      </div>
+         
+
+            <div class="post-info">
+              <span class="autor"><i class="fa fa-fw fa-user"></i>Suryaveer</span>
+              <span class="divider">|</span>
+              <span class="date"><i class="fa fa-fw fa-clock-o"></i> 18 October, 2017</span>
+              <!-- Share Buttons -->
+              <div class="btn-group share-buttons pull-right hidden-xs">
+                <a href="#" target="_blank" class="btn"><i class="fa fa-facebook"></i> </a>
+                <a href="#" target="_blank" class="btn"><i class="fa fa-twitter"></i> </a>
+                <a href="#" target="_blank" class="btn"><i class="fa fa-dribbble"></i> </a>
+              </div>
+              <!-- /Share Buttons -->
+            </div>
+
+    <script src="../blog_files/bootstrap.js"></script>
+    <script src="../blog_files/page-transition.js"></script>
+    <script src="../blog_files/imagesloaded.js"></script>
+    <script src="../blog_files/validator.js"></script>
+    <script src="../blog_files/jquery.js"></script>
+    <script src="../blog_files/masonry.js"></script>
+    <script src="../blog_files/owl.js"></script>
+    <script src="../blog_files/jquery_002.js"></script>
+    <script src="../blog_files/jquery_003.js"></script>
+    <script src="../blog_files/main.js"></script>
+  
+
+</body></html>
